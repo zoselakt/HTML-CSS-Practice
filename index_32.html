@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> position_실전레이아웃 </title>
+        <style>
+            *{padding: 0; margin: 0;}
+            img{
+                display: block;}
+            body{background-color: black;}
+            #wrap{
+                width: 1600px;
+                overflow: hidden;
+                margin: 0 auto;
+                position: relative;
+            }
+
+            nav{
+                width: 200px;
+                height: 100%;
+                position: fixed;
+                background-color: #000;
+            }
+            section{
+                width: 1400px;
+                height: 100%;
+                position: relative;
+                background-color: #ffb237;
+                float: right;
+                overflow: hidden;
+            }
+            .main{
+                width: 1200px;
+                overflow: hidden;
+                position: relative;
+                margin: 50px auto;
+                height: 399px;
+            }
+            button{
+                width: 100px;
+                height: 100px;
+                background-color: #000;
+                border: none;
+                border-radius: 50%;
+                color: #fff;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -50px;
+                margin-top: -50px;
+            }
+            .banner{
+                /*(총 넓이 1600)사진 1장의 넓이 * 4장 + 사진사이margin값 = 160 */
+                width: 1160px;
+                overflow: hidden;
+                margin: 30px auto;
+            }
+            .banner>img{
+                float: left;
+                margin: 0 20px;
+                margin-bottom: 40px;
+                box-shadow: 3px 3px 10px #f49909;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="wrap">
+            <nav>
+                <img src ="img/img/menu.jpg" alt="메뉴" />
+            </nav>
+
+            <section>
+                <div class="main">
+                    <img src="img/img/main_pic.jpg" alt="" />
+                    <button type="button">▶</button>
+                </div>
+
+                <div class="banner">
+                    <img src="img/img/bn1.jpg" alt="대체이미지" />
+                    <img src="img/img/bn2.jpg" alt="대체이미지" />
+                    <img src="img/img/bn3.jpg" alt="대체이미지" />
+                    <img src="img/img/bn4.jpg" alt="대체이미지" />
+                    <img src="img/img/bn5.jpg" alt="대체이미지" />
+                    <img src="img/img/bn6.jpg" alt="대체이미지" />
+                    <img src="img/img/bn7.jpg" alt="대체이미지" />
+                    <img src="img/img/bn8.jpg" alt="대체이미지" />
+                    <img src="img/img/bn9.jpg" alt="대체이미지" />
+                    <img src="img/img/bn10.jpg" alt="대체이미지" />
+                    <img src="img/img/bn11.jpg" alt="대체이미지" />
+                    <img src="img/img/bn12.jpg" alt="대체이미지" />
+                </div>
+            </section>
+        </div>
+
+    </body>
+</html>

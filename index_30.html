@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> 위치속성 </title>
+        <style>
+            *{padding: 0; margin: 0;}
+            .pbox{
+                width: 300px;
+                height: 300px;
+                background-color: aquamarine;
+                text-align: center;
+                line-height: 300px;
+                font-size: 30px;
+                position: absolute;
+                /*지정가능한 속성 : left, right, top, bottom
+                static - 기본값 / 변화 x
+                relative - 상대위치
+                absolute - 절대위치
+                fixed - 고정위치 / 스크롤을 내려도 그대로 내려옴*/
+                top: 50px;
+                left: 50px;
+            }
+               .pbox:nth-child(1){
+                z-index: 3; /*ntf-child 순서 변경 */
+                background-color: antiquewhite;
+                position: absolute;
+                top: 30px;
+                left: 30px;
+            }
+            .pbox:nth-child(2){ /*자식값 2번째 / 순서대로 1번째부터 쌓여서 마지막값 최상단에위치*/
+                background-color: aqua;
+                position: absolute;
+                top: 60px;
+                left: 60px;
+            }
+            .pbox:nth-child(3){
+                background-color: cornflowerblue;
+                position: absolute;
+                top: 90px;
+                left: 90px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+<!--
+        <h1> position</h1>
+        <p>요소를 특정한 위치로 배치하는 속성 </p>
+
+        <div class="p1">
+            position
+        </div>
+-->
+        <div class="pbox">box1</div>
+        <div class="pbox">box2</div>
+        <div class="pbox">box3</div>
+    </body>
+</html>

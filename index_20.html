@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> 다양한 선택자의 활용 03 </title>
+        <style>
+            input[type="text"]{
+                background-color: aqua;
+            }
+            input:focus{
+                background-color: blanchedalmond;
+            }
+            img[src$="png"]{
+                border: 3px solid #f00;
+            }
+            img[src$="jpg"]{
+                border: 3px solid #ff0;
+            }
+            img[src$="gif"]{
+                border: 3px solid #00f
+            }
+            div[class*="box"]{
+                background-color: aquamarine;
+            }
+            /* checked input에 check가 된 상태 / +는 동위선택자*/
+            input[type="checkbox"]:checked + div{
+                background-color: antiquewhite;
+            }
+
+            /*문자선택자*/
+            p::first-letter{ /*첫번째 글자를 선택*/
+                font-size: 20px;
+                font-weight: 900;
+                color: aqua;
+            }
+            p::first-line{ /*첫번째 라인을 선택*/
+                background-color:cornflowerblue;
+            }
+            h1::before{
+                content: "앞쪽 텍스트";
+                font-size: 30px;
+                font-weight: 900;
+                color: cadetblue;
+            }
+            h1:after{
+                content: "뒤쪽 텍스트";
+                font-size: 30px;
+                font-weight: 900;
+                color: brown;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--속성선택자: 특정한속성이나특정한속성값을 가지고 있는 html요소를 선택
+        [속성이름="속성값"]
+        [속성이름$="속성값"]
+        [속성이름*="속성값"]
+        -->
+        <!--html내 텍스트를 쓸수있음
+        <input type="text" />-->
+
+        <div class="box">
+            <img src="C:\img\differ\gif.gif">
+            <img src="C:\img\differ\png.png">
+            <img src="C:\img\differ\jpg.jpg">
+        </div>
+
+        <!--상태선택자 : 마우스의 반응에 따른상태를 선택
+        <input type="text" / : 스타일에 포커스와 관련>-->
+        <br/>
+        <!--체크박스 생성
+        <input type="checkbox" />-->
+        <div>
+            <h1>자바 ORM 표준 JPA 프로그래밍 - 기본편</h1>
+            <p>
+            객체를 관계형 데이터베이스에 저장하려면 개발자는 많은 코드와 SQL을 작성해야 합니다. 예를 들어 객체를 SQL로 변환하는 단순한 일부터, 객체의 상속 구조를 테이블에 저장하는 복잡한 일까지, 개발자는 객체와 데이터베이스 사이에서 무수한 매핑 코드와 SQL을 직접 작성해야 합니다.
+
+            자바 ORM 표준인 JPA는 SQL 작성 없이 객체를 데이터베이스에 직접 저장할 수 있게 도와주고, 객체와 관계형 데이터베이스의 차이도 중간에서 해결합니다.
+            </p>
+        </div>
+
+        <!--가상선택자
+        - 선택될 요소의 앞 혹은 뒤쪽으로가상의 요소를 넣어 표현 /
+            ::before - 특정요소 앞에 삽입, 내용이나 가상의 요소를 부여
+            ::after- 특정요소 뒤에 삽입, 내용이나 가상의 요소를 부여
+        -->
+
+    </body>
+</html>

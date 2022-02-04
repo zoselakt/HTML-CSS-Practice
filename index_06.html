@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> CSS 속성 </title>
+    <style>
+        *{
+        padding: 0;
+        margin: 0;
+        }
+
+        body{
+/*            background-color: #e3e3e3;   :전체 배경화면 컬러    */
+            background-image: url(differ/gif.gif);
+            /*배경이미지 속성 - 이미지사이즈가 부모의 사이즈보다 작을 때 반복됨*/
+            background-repeat: no-repeat; /*배경이미지 반복되지 않는 원본 한장으로 표시*/
+            background-size: 300px 200px; /*배경이미지 사이즈 속성 - x, y px 값 , %값*/
+
+            color: burlywood;
+        }
+        h1 {
+            background-color: aliceblue;  /* h1태크에만 컬러*/
+        }
+
+        #art{
+            color: #ffffff; /*글자색상 코드*/
+        }
+        .text{
+            color: #8d6c4c; /*글자색상 - ctrl + e */
+            font-size: 20px; /*글자사이즈 - px, em, pt...*/
+            font-weight: 900; /* 글자굵기 - 100~900 / 적용안되는 글자체도 있음*/
+            line-height: 50px; /*행(위아래) 간격 - px, em, pt, %....*/
+            font-family: "굴림"; /* 컴퓨터에 저장된 글자체가 표현됨(웹 폰트는 제외) */
+            font-style: italic; /*글자 스타일 */
+            letter-spacing: 10px; /*자간 - px, % ...*/
+            text-align: right; /*문단 정렬(글자정렬) - left, right... */
+        }
+        a{
+            text-decoration: none; /* 글자를 꾸며주는 속성 */
+            color: aqua;
+        }
+    </style>
+    </head>
+
+    <body>
+        <h1 id="art"> 아트윅 컨셉드로잉 </h1>
+        <p>
+            편집 포트폴리오에 포함될 수있는 북커버 및 동화책 삽화 제작
+        </p> <br/><br/>
+
+        <h1 class="text"> 글자관련 속성 <a href="#"> : 속성 - 02</a> </h1>
+        <p>
+            글자속성들의 종류:
+        </p> <br/><br/>
+
+        <h1>배경관련 속성 </h1>
+        <p>
+            배경관련 속성
+        </p>
+
+
+
+    </body>
+</html>

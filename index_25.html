@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> 멀티미디어 </title>
+    </head>
+
+    <body>
+        <h1>멀티미디어</h1>
+        <!--오디오 같은 사운드를 재생하기위해 사용
+        src- 오디오 파일의 위치를연결
+        controls- 재생컨트롤 막대표시
+        muted- 음소거 기능
+        loop - 반복재생
+        <audio src="file/test_ado.mp3" controls loop></audio> -->
+
+        <audio>
+            <source src="file/test_ado.mp3" type="audio/mp3">
+            <source src="file/test_ado.ogg" type="audio/ogg">
+            <p>오디오 파일이 브라우저에서 지원되지 않습니다!</p>
+        </audio>
+
+        <!--비디오 영상을 실행시키기 위하여 사용
+        src- 오디오 파일의 위치를연결
+        controls- 재생컨트롤 막대표시
+        muted- 음소거 기능
+        loop - 반복재생
+        width-가로폭
+        height- 세로폭
+        poster- 비디오 재생전 준비화면-->
+        <video src="file/korea_video.mp4" controls poster="file/bg.PNG"></video>
+
+        <!--iframe: html문서안에 html문서가 존재 / 내부 프레임 / 긴 내용의 문서, 큰 용량의 영상을 링크로 가져올때 사용
+        src- 오디오 파일의 위치를연결
+        width-가로폭
+        height- 세로폭-->
+
+        <!--문서 불러오기-->
+        <iframe src="index_24.html" width="600" height="600"></iframe>
+        <!--영상 불러오기-->
+        <iframe src="https://youtu.be/9CSmWGF2_VI?list=PL05aYMN6gfilQojCFHO4R8Ua0XbcRvVf-" width="600" height="600"></iframe>
+
+    </body>
+</html>

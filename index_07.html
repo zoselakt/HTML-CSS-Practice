@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> 화면 분할 태그 </title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            div{
+                background-color: beige;
+                line-height: 50px; /*행간, 줄간격*/
+                width: 100px; /*넓이, 가로폭 - px, %, auto */
+                height: 100px; /*높이, 세로폭 - 동일 */
+                border: 5px solid #000;/*선, 선의 굵기 , 선 스타일-선의색상 */
+                padding: 50px; /*안쪽여백*/
+                margin: 50px; /*바깥여백*/
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>block</h1>
+        <!--block : 박스와 같이 쌓이면서 나타나는 성격 / 화면전체에 사용되는 태그-->
+
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+
+        <h1>inline</h1>
+        <!--inline : 글자와 같이 옆으로 나열되며 나타나는 성격 / 내용의 폭값, 화면의 일부를 차지하는 태그-->
+        <span>span1</span>
+        <span>span2</span>
+        <span>span3</span>
+
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> table </title>
+        <style>
+            td,table,th{ border: 2px solid #000;}
+            td,th{ width: 100px;}
+        </style>
+    </head>
+
+    <body>
+                <h1>표관련 태그</h1>
+                <!-- : 표를 나타내는 태그
+                table > tr(줄,행) > td(칸,열)
+                -->
+
+                <table>
+                    <caption>table의 제목(center)</caption>
+                    <tr>
+                        <!---th: table의 head 구분을 지을때 사용
+                        text-align:center / font-weight:bold-->
+                        <th>table1</th>
+                        <th>table2</th>
+                    </tr>
+                      <tr>
+                        <td>table3</td>
+                        <td>table4</td>
+                    </tr>
+                      <tr>
+                        <td>table5</td>
+                        <td>table6</td>
+                    </tr>
+                </table>
+
+                <br/><br/><br/><br/><br/>
+
+
+
+                <!--colspan="합쳐지는 행의 개수"  가로의 병합
+                        rowspan="합쳐지는 열의 개수"  세로의 병합
+                    -->
+                <table>
+                        <caption>table의 병합</caption>
+                        <tr>
+                            <td colspan="3">01</td>
+                            <!--<td>02</td>
+                            <td>03</td>-->
+                            <td rowspan="3">04</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">05</td>
+                            <td>06</td>
+                            <td>07</td>
+                            <!--<td>08</td>-->
+                        </tr>
+                        <tr>
+                            <!--<td>09</td>-->
+                            <td>10</td>
+                            <td>11</td>
+                           <!-- <td>12</td>-->
+                        </tr>
+                </table>
+
+
+                  <br/><br/><br/><br/><br/>
+
+                <table>
+                    <caption>표의 구조(의미)</caption>
+                    <thead>
+                        <tr>
+                            <th>table머리</th>
+                            <th>table머리</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>table내용</td>
+                            <td>table내용</td>
+                        </tr>
+                   </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>table하단</td>
+                            <td>table하단</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+
+
+
+    </body>
+</html>

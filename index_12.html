@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> 박스,나열 </title>
+        <style>
+            div{
+                width: 100px;
+                height: 100px;
+                border: 5px solid #000;
+                float: right; /*오른쪽 정렬*/
+                margin-right: 30px;
+            }
+            .boxr{
+                width: 100px;
+                height: 100px;
+                border: 5px solid #000;
+                float: none; /*옆의 박스에 영향을 주는 속성, 나열하고자하는 박스함께 나열값*/
+            }/*
+            .boxc{
+                width: 200px;
+                height: 100px;
+                margin: 0;
+                margin-top: 30px;
+                clear: both;
+            }*/
+            #allbox{
+                float: none;
+                border: none;
+                margin: 0 auto;
+                background-color: aquamarine;
+                width: 720px; /* w:200 * 3(=600) + b:5 * 6(=30) + 30 * 3(=90) */
+                height: 210px /* h: 200 + b:5*2(=10) */
+            }
+            .boxs{
+                padding: 20px;
+                box-sizing: border-box; /* 패딩, 선을 폭값안에서 함께 표현*/
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="allbox">
+        <div>b1</div>
+        <div>b2</div>
+        <div class="boxr">b3</div>
+        </div>
+
+        <!--clear: float과 함께 사용, float을 제거할때 사용
+        left: 좌측나열 제거 / right: 우측나열 제거 / both: 양쪽나열 제거
+        <div class="boxc">
+        제거!!
+        </div> -->
+
+        <!-- box-sizing : 박스의 크기를 어떤것의 기준으로 기준으로 계산할지를 지정하는 속성-->
+        <div class="boxs"> box-sizing</div>
+
+
+    </body>
+</html>

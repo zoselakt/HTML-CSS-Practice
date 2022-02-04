@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> 배경이미지표현 </title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            body{ /*배경이미지 / ,(쉼표)를 기준으로 구분하여 겹치게 설정가능 */
+                background-image: url(img/cat_bg.png),url(img/land.png);
+                background-repeat: no-repeat; /*반복 x*/
+                background-size: 100%; /* x, y, %, px, cover:화면꽉차게표현*/
+                background-attachment: fixed; /*기본값 / 스크롤을 내려도 고정된이미지를 출력*/
+                background-position: 200px 100px; /* html화면 내 배경이미지의 위치를 지정하여 표현가능 / 단어, px, % x(left, center,right), y(top, center, bottom)*/
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+</html>

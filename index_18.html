@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> 동위선택자 </title>
+        <style>
+            h1+h2{
+                color: aqua;
+            }
+            h1~h2{
+                background-color: dodgerblue;
+            }
+
+            h1:hover{ /*특정한 요소에 마우스를 올렸을때*/
+                background-color: cadetblue;
+            }
+            h2:active{ /* 특정한 요소에 마우스로 클릭했을때 */
+                color: aquamarine;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--동위선택자 : 동위관계에 있는 요소중에 해당요소보다 뒤에 존재하는 특정한요소를 선택할 때                  사용
+            - 선택자 A + 선택자 B: A바로 뒤에 있는 B를 선택
+            - 선택자 A ~ 선택자 B: A 뒤에 위치하는 B를 모두 선택
+            -->
+
+        <!--반응선택자 : 사용자가 마우스를 이용해서 특정한 행동을 취했을때 css 속성을 지정할 수있는 선택자 -->
+            <h1> 제목1 </h1>
+            <h2> 제목2 </h2>
+            <h2> 제목2 </h2>
+            <h2> 제목2 </h2>
+            <h2> 제목2 </h2>
+            <h2> 제목2 </h2>
+            <h2> 제목2 </h2>
+    </body>
+</html>

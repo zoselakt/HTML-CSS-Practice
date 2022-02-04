@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> 웹폰트 </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+
+        <style>
+            /* 내부 폰트
+            *{padding: 0; margin: 0;}
+            body{
+                font-size: 14px;
+                폰트
+                font-family: "NanumSquare_acB", "NotoSansKR-Black", sans-serif;
+            }
+                .test1{
+                    font-family: "NanumMyeongjo", serif;
+                }
+*/
+            /*폰트페이스*/
+            @font-face{
+                font-family: "nanum";
+                font-weight: 500;
+                src: url(C:\img\file\설치\font /NanumGothic.eot),
+                     url(C:\img\file\설치\font /NanumGothic.woff) format("woff");
+            }
+
+            p{margin: 40px 0px}
+            /*구글 웹폰트*/
+            .test2{font-family: 'Black Han Sans', sans-serif;}
+            .test3{font-family: "nanum"}
+
+        </style>
+
+    </head>
+
+    <body>
+        <h1>컴퓨터 내부 폰트 연결</h1>
+        <p class="test1">
+            webfont - 어떠한 링크, 도메인, 브라우저에 상관없이 폰트가 연결되어지는것.
+        </p>
+
+        <h1>구글 웹폰트 </h1>
+        <p class="test2">
+            web 폰트 - 구글에 font 입력하여 최상단 페이지 클릭후 서체 고른뒤 폰트주소를 타이틀 밑에 붙여넣는다. asd
+        </p>
+
+        <h1> font-face</h1>
+        <p class="test3">
+            폰트를 다운받거나 문서와 직접 연결하여 폰트를 선언
+        </p>
+    </body>
+</html>

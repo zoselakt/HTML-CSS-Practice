@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> 테이블 태그 - 표 </title>
+        <style>
+            td{border: 3px solid #000;}
+        </style>
+    </head>
+
+    <body>
+        <h1> table </h1>
+        <!--표를 만드는 태그
+        table - tr(줄, 행) - td(칸, 열)-->
+        <table>
+            <caption>table 제목</caption>
+            <tr>
+                <!--th : table의 head 구분을 지을때 사용 / -->
+                <th>table1-1</th>
+                <th>table1-2</th>
+            </tr>
+            <tr>
+                <td>table1</td>
+                <td>table2</td>
+                <td>table3</td>
+                <td>table4</td>
+            </tr>
+            <tr>
+                <td>table1</td>
+                <td>table2</td>
+                <td>table3</td>
+                <td>table4</td>
+            </tr>
+
+        </table>
+        <br/><br/><br/><br/>
+        <table>
+            <caption>table 병합</caption>
+            <tr>
+                <!--colspan: 가로로 병합 / 거의 늘어나는 효과... / 값이 3이여서 2,3은 지운다-->
+                <td colspan="3">table1</td>
+                <td>table4</td>
+            </tr>
+            <tr>
+                <!--rowspan: 세로 병합 / 값이 2여서 마지막 값을 지운다.-->
+                <td rowspan="2">table1</td>
+                <td>table2</td>
+                <td>table3</td>
+                <td>table4</td>
+            </tr>
+            <tr>
+                <td>table1</td>
+                <td>table2</td>
+                <td>table3</td>
+            </tr>
+        </table>
+    </body>
+</html>

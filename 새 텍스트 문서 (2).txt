@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+	<meta charset= "utf-8" >
+	<title> html문서 기본이해 </title>
+  </head>
+  <body>
+	html 문서작성 연습!!!.
+  </body>

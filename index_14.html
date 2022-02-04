@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> display 응용 </title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            span{
+                border: 4px solid #000;
+                /*인라인과 블록의 합성속성 / 글자와같이옆으로 나열 / 블럭과 같이 css에 대한 모든 적용이 이루어지는 성격
+                inline-block */
+                display: inline-block;
+                width: 200px;
+            }
+            body{
+                text-align: center;
+            }
+            .transform{
+                display: block;
+                width: 500px;
+                margin: 0 auto;
+                display: none; /* 안보이게 설정*/
+            }
+            div{
+                background-color: antiquewhite;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+        <span>span 01</span>
+        <span>span 02</span>
+        <span>span 03</span>
+        </div>
+
+        <span class="transform">span 04</span>
+        <span class="transform">span 05</span>
+        <span class="transform">span 06</span>
+    </body>
+</html>

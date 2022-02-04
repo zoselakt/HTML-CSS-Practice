@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> 다양한 선택자의 활용 01 </title>
+        <style>
+            div>h1{ /*자손 css 문법*/
+                background-color: antiquewhite;
+            }
+            div span{ /* 후손 css문법*/
+                background-color: aquamarine;
+            }
+            div>h2{
+                border: 3px solid #000;
+            }
+            div>span{
+                color:blue;
+            }
+            .box span{
+                font-size: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--후손 선택자 & 자손선택자-->
+        <!--후손선택자: 해당요소의하위요소에있는 특정한 요소를 모두선택 / 선택자 A 선택자 B
+            자손선택자: 해당요소의 바로 밑에위치하는 특정한 요소를 선택 / 선택자 A > 선택자 B
+        -->
+        <div>
+            <h1> 제목1 </h1>
+            <h2> 제목2 </h2>
+            <div class="box">
+                <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+                <li><span>menu3</span></li>
+                </ul>
+            </div>
+            <h2>제목2</h2>
+            <span>span</span>
+        </div>
+
+    </body>
+</html>
