@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> 반응형웹-미디어쿼리 </title>
+        <style>
+            *{padding: 0; margin: 0;}
+            body{background-color: beige;}
+            
+            @media screen and (min-width:1024px) {
+                
+                /*1024px 이상 화면 기준*/
+                body{background-color: darkseagreen;}
+                
+            }
+            @media screen and (max-width:1023px) {
+                body{background-color: aqua;}
+            }
+            @media screen and (min-width:480px) and (max-width:767px} {
+                body{background-color: blueviolet}
+            }
+ /*           .test{
+                /*max-width: 700px; 최대 넓이값
+                min-width: 700px;
+                height: 700px;
+                background-color: aquamarine;
+                font-size: 30px;
+                color: #fff;*/
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="test">
+        뷰포트:화면사이즈(화면에보이는영역을기기기준으로구분) <br/>
+        ※ 미디어쿼리<br/>
+        - 뷰포트에 따라서 css의 구분을 지어 나타내는 쿼리문(css구문)
+        </div>
+    </body>
+</html>
